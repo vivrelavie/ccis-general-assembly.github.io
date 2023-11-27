@@ -1,0 +1,394 @@
+@font-face { font-family: "Monesta"; src: url('Monesta-Light.otf'); } 
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #DBE0DA;
+}
+
+.wrapper{
+	width:100%;
+	height: 100%; 
+    z-index: -5;  
+}
+
+.navigation{
+    display: flex;
+    width: 100%;
+    height: 122px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.logos{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.comsoc_logo, .ccis_logo{
+    max-width: 73px;
+	height: 73px;
+    border-radius: 50%;
+}
+
+.navigation_text{
+    flex-grow: 1;
+    margin-left: 15px;
+    width: 500px;
+    color: #2D362B;
+    font-family: Montserrat;
+    font-size: 11;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+a:link{
+    color: #2D362B;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #2D362B;
+    text-decoration: none;
+}
+
+.navigation_links a{  
+    flex-grow: 1;
+    margin-right: 30px; 
+    width: auto;
+    height: 12px;
+}
+
+.nav_home, .nav_about_us, .nav_gallery, .audience_text {
+    text-align: center;
+    font-family: Monesta;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: right;
+    color: #2D362B;
+}
+
+button{
+    color: #DBE0DA;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 300;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button_join{
+    margin-right: 30px;
+    font-size: 26px;
+    flex-shrink: 0;
+    width: 185px;
+    height: 61px;
+    border-radius: 9px;
+    background: #2D362B;
+    color: #DBE0DA;
+}
+
+.header{
+    width: 100%;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin-bottom: 25px;
+    flex-direction: column;
+
+}
+
+.header_image{
+    display: block;
+    width: 100%;
+    height: 190px;
+    filter: brightness(45%);
+    object-fit: cover;
+    object-position: 100% 28%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.text_container1{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+.header_text{
+    color: #FFF;
+    text-align: center;
+    font-family: Monesta;
+    font-style: normal;
+    font-size: 38px;
+    font-weight:450;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+p{
+    color: #DBE0DA;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+}
+
+.header_subtext p{
+    width: 100%;
+    margin-top: -25px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.web_content {
+    width: 100%;
+    height: 370px;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow1, .box1, .box2{
+    width: 319px;
+    height: 309px;
+    border-radius: 20px;
+    background-color: #2D362B;
+    z-index: 3;
+}
+
+.rectangle {
+    margin-top: 40px;
+    width: 100%;
+    height: 190px;
+    background-color: #4F5547;
+    position: absolute;
+    z-index: -1;
+}
+
+.shadow2{
+    width: 319px;
+    height: 309px;
+    border-radius: 20px;
+    background-color: #DBE0DA;
+    z-index: -3;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    gap: 35px;
+    z-index: 2;
+}
+
+.content{
+    margin-left: 25px;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.content_image{
+    width: 319px;
+    height: 309px;
+    background-color: #2D362B;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.oath{
+    background-image: url("images/oath-2.jpg");
+    background-position: 51% 50%;
+    background-size: cover;
+}
+
+.faculty{
+    background-image: url("images/faculty-1.jpg");
+    background-position: 22% 50%;
+    background-size: cover;
+}
+
+.oath_text, .faculty_text{
+    margin: 15px;
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.56px;
+}
+
+.lorem_ipsum p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.audience{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.audience_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+
+.line{
+    background-color: #4F5547;
+    width: 50%;
+    height: 2px;
+}
+
+.audience_text{
+    margin-top: -70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.audience_images{
+    width: 100%;
+    height: auto;
+    margin-top: -35px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.audienceimg{
+    width: 265.163px;
+    height: 149.3px;
+    border-radius: 19px;
+    object-fit: contain;
+
+}
+
+.left_arrow, .right_arrow{
+    padding: 5px;
+    font-size: 15;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #2D362B;
+    border-color: #2D362B;
+}
+
+button:hover{
+    background: #4F5547;
+}
+
+.arrow {
+    border: solid #DBE0DA;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4F5547;
+}
+
+.email{
+    color: #DBE0DA;
+    text-align: center;
+    line-height: normal;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+}
+
+.footer_left, .footer_center, .footer_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_links, .socmed_links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.footer_home p, .footer_about_us p, .footer_gallery p, .link_facebook, .link_twitter p, .link_instagram p{
+    color: #DBE0DA;
+    text-align: center;
+    line-height: normal;
+}
+
+.footer_home:link,.footer_about_us:link, .footer_gallery:link, .link_facebook:link, .link_twitter:link, .link_instagram:link{
+    color: #DBE0DA;
+    text-decoration: none;
+}
+
+.footer_home:visited, .footer_about_us:visited, .footer_gallery:visited, .link_facebook:visited, .link_twitter:visited, .link_instagram:visited{
+    color: #DBE0DA;
+    text-decoration: none;
+}
+
+.separator{
+    margin-left: 7px;
+    margin-right: 7px;
+    border-left: 2px solid #DBE0DA;
+    height: 20px;
+}
